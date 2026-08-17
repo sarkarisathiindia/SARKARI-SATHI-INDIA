@@ -1,16 +1,8 @@
-# Sarkari Sathi India
+Sarkari Sathi India - Exact Design Version
 
-Responsive single-page website inspired by the supplied reference image.
+This version recreates the structure of the supplied reference:
+header -> hero/landmarks -> search -> 6 quick services -> 6 category cards -> trust bar -> promise/social area -> footer/disclaimer.
 
-## Run
-Open `index.html` in Chrome/Edge/Firefox.
+UP जाति प्रमाण पत्र and UP निवास प्रमाण पत्र are linked to the UP e-District portal.
 
-## Included
-- Hindi responsive UI
-- Search/filter
-- Working service buttons
-- Official government portal links
-- Mobile navigation
-- Disclaimer clarifying that this is not a government website
-
-The site is an independent information portal and does not impersonate a Government of India website.
+Replace your GitHub Pages index.html with this file.

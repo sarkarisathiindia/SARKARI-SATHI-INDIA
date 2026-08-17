@@ -3,123 +3,91 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sarkari Sathi India | सरकारी सेवाएँ</title>
-<meta name="description" content="सरकारी सेवाओं और आधिकारिक सरकारी पोर्टल्स तक आसान पहुँच।">
+<title>SARKARI SATHI INDIA | सरकारी सेवाएँ</title>
 <style>
-:root{--navy:#071d57;--blue:#16429b;--green:#0b8f43;--orange:#ef6415;--red:#e52348;--purple:#5b25c8;--ink:#17213b;--muted:#647086;--line:#d7e0ed;--bg:#f3f7fc;--shadow:0 7px 20px rgba(9,35,88,.12)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(#fff,#f3f7fc);color:var(--ink);font-family:Arial,"Noto Sans Devanagari",sans-serif}
-a{text-decoration:none;color:inherit}.wrap{width:min(1200px,94%);margin:auto}
-.top{background:var(--navy);color:#fff;font-size:13px;padding:7px 0}.top .wrap{display:flex;justify-content:space-between}
-header{background:#fff;border-bottom:1px solid #e3e8f0;position:sticky;top:0;z-index:30}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:11px}.logo{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-size:26px;background:radial-gradient(circle,#fff 0 42%,transparent 43%),conic-gradient(#f19a18 0 33%,#087f3d 33% 66%,#183e8c 66%);box-shadow:0 2px 8px #b8c5d8;border:3px solid #fff}.brand h1{margin:0;font-size:25px;letter-spacing:.4px;color:var(--navy)}.brand h1 i{font-style:normal;color:var(--green)}.brand h1 b{color:var(--orange)}.brand small{display:block;color:#667084;margin-top:2px}.navlinks{display:flex;gap:5px}.navlinks a{font-weight:700;font-size:14px;padding:10px 12px;border-radius:10px}.navlinks a:hover{background:#edf3ff;color:var(--blue)}.menu{display:none;border:0;background:#eef3fb;padding:9px 12px;border-radius:10px;font-size:22px}
-.hero{padding:26px 0 24px;background:radial-gradient(circle at 9% 20%,#fff 0 10%,transparent 30%),linear-gradient(135deg,#fff,#edf5ff 55%,#fff)}.hero-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:25px;align-items:center}.badge{display:inline-block;border:1px solid #bfe1ca;background:#eaf7ef;color:#087b39;font-size:13px;font-weight:800;padding:7px 13px;border-radius:30px}.hero h2{font-size:clamp(42px,6.3vw,74px);line-height:.98;letter-spacing:-2.5px;color:var(--navy);margin:12px 0}.hero h2 span{color:var(--green)}.hero p{font-size:17px;line-height:1.6;color:#536076;margin:0 0 16px;max-width:760px}.scene{height:215px;border:1px solid #cad7e8;border-radius:24px;background:linear-gradient(#e7f3ff,#fff);box-shadow:var(--shadow);position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:space-evenly;padding:25px 30px}.scene:before{content:"🇮🇳";position:absolute;right:15px;top:8px;font-size:62px;opacity:.28}.gate{width:44%;height:120px;background:linear-gradient(#d6a16a,#a45e2a);border-radius:48% 48% 4px 4px;position:relative}.gate:after{content:"";position:absolute;left:37%;bottom:0;width:26%;height:52%;background:#fff1d7;border-radius:50% 50% 0 0}.taj{width:25%;height:100px;background:#e7e7e7;clip-path:polygon(50% 0,62% 16%,80% 16%,86% 30%,100% 100%,0 100%,14% 30%,20% 16%,38% 16%);position:relative}.taj:before{content:"";position:absolute;left:43%;top:12%;width:14%;height:38%;background:#b9bcc2;border-radius:50% 50% 0 0}
-.search{display:flex;background:#fff;border:1px solid #c8d4e4;border-radius:16px;padding:7px;box-shadow:0 10px 26px #153e8c18}.search input{flex:1;min-width:0;border:0;outline:0;padding:13px 14px;font-size:16px}.search button{border:0;background:var(--navy);color:#fff;font-weight:800;font-size:15px;border-radius:11px;padding:0 22px;cursor:pointer}.search button:hover{background:#0c337e}
-.section{padding:20px 0}.title{display:flex;justify-content:space-between;align-items:end;gap:10px;margin-bottom:13px}.title h3{margin:0;font-size:24px;color:var(--navy)}.title span{font-size:12px;color:#718096}
-.quick{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.q{background:#fff;border:1px solid var(--line);border-radius:15px;padding:13px 9px;text-align:center;box-shadow:var(--shadow);transition:.2s}.q:hover{transform:translateY(-4px)}.q .ico{font-size:38px;height:51px;display:grid;place-items:center}.q h4{font-size:16px;margin:7px 0 10px}.go{display:inline-block;color:#fff;background:var(--green);border-radius:9px;padding:7px 11px;font-size:12px;font-weight:800}.q:nth-child(3) .go{background:var(--purple)}.q:nth-child(4) .go{background:var(--orange)}.q:nth-child(5) .go{background:var(--blue)}.q:nth-child(6) .go{background:var(--red)}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px;box-shadow:var(--shadow);border-top:5px solid var(--blue)}.card:nth-child(2){border-top-color:var(--green)}.card:nth-child(3){border-top-color:var(--orange)}.card:nth-child(4){border-top-color:var(--purple)}.card:nth-child(5){border-top-color:#1168b5}.card:nth-child(6){border-top-color:var(--red)}.ct{display:flex;gap:10px;align-items:center}.ct .ci{font-size:27px}.ct h4{margin:0;font-size:18px}.card ul{margin:10px 0 14px;padding-left:21px;line-height:1.9;color:#465066}.card li:hover{color:var(--blue)}.all{background:var(--blue);color:#fff;padding:8px 12px;border-radius:9px;font-weight:800;font-size:12px}.card:nth-child(2) .all{background:var(--green)}.card:nth-child(3) .all{background:var(--orange)}.card:nth-child(4) .all{background:var(--purple)}.card:nth-child(6) .all{background:var(--red)}
-.trust{margin-top:8px;background:var(--navy);color:#fff}.trust .wrap{display:grid;grid-template-columns:repeat(5,1fr)}.trust .item{text-align:center;padding:18px 10px;border-right:1px solid #ffffff30}.trust .item:last-child{border:0}.item .ti{font-size:28px}.item b{display:block;margin-top:4px}.item small{display:block;color:#d8e4ff;margin-top:4px}
-.info{padding:24px 0}.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.info-box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}.info-box h3{margin:0 0 8px;color:var(--navy)}.info-box p{margin:6px 0;color:#5b6678;line-height:1.6}.warning{background:#fff7e8;border-color:#f0d39a}
-footer{background:#fff;border-top:1px solid var(--line);padding:24px 0 15px}.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:22px}.foot h3{margin:0 0 8px;color:var(--navy)}.foot p{color:#5d687b;line-height:1.6;font-size:14px}.foot a{color:var(--blue);font-weight:700}.copy{text-align:center;color:#707b8d;font-size:12px;border-top:1px solid #edf0f5;padding-top:12px;margin-top:14px}
-.toast{position:fixed;left:50%;bottom:20px;transform:translate(-50%,130px);background:#0d2e72;color:#fff;padding:12px 17px;border-radius:12px;box-shadow:0 12px 30px #0003;transition:.25s;z-index:50;font-weight:700}.toast.show{transform:translate(-50%,0)}.empty{display:none;background:#fff;border:1px dashed #aebbd0;border-radius:14px;padding:22px;text-align:center;color:#667085}
-@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.scene{display:none}.quick{grid-template-columns:repeat(3,1fr)}.grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}.navlinks.open{display:flex;position:absolute;top:76px;left:3%;right:3%;padding:10px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);flex-direction:column}.navlinks.open a{text-align:center}.menu{display:block}.trust .wrap{grid-template-columns:repeat(3,1fr)}.info-grid{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.top .wrap{justify-content:center}.top .wrap span:first-child{display:none}.brand h1{font-size:20px}.brand small{font-size:10px}.logo{width:44px;height:44px;font-size:21px}.hero{padding-top:21px}.hero h2{font-size:43px}.hero p{font-size:15px}.search input{font-size:14px;padding:11px 8px}.search button{padding:0 13px}.quick{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.trust .wrap{grid-template-columns:repeat(2,1fr)}.trust .item{border-bottom:1px solid #ffffff30}.foot{grid-template-columns:1fr}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eef3f8;color:#14203b;font-family:Arial,"Noto Sans Devanagari",sans-serif}
+.wrap{width:min(1180px,96%);margin:auto}a{text-decoration:none}.top{background:#061d55;color:#fff;font-size:12px;padding:6px}.top .wrap{display:flex;justify-content:space-between}
+header{background:#fff;border-bottom:1px solid #d7dfeb}.head{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px}.logo{width:53px;height:53px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#f4a000,#fff 48%,#078c42);border:3px solid #fff;box-shadow:0 2px 8px #9caabd;font-size:27px}.brand h1{margin:0;color:#08235d;font-size:25px;letter-spacing:.4px}.brand h1 span:nth-child(2){color:#078b42}.brand h1 span:nth-child(3){color:#ed5d16}.brand small{display:block;color:#687388;font-size:11px;margin-top:2px}.nav{display:flex;gap:4px}.nav a{font-size:13px;font-weight:bold;color:#17223c;padding:10px 11px;border-radius:8px}.nav a:hover{background:#edf3ff;color:#123f98}.menu{display:none;border:0;background:#edf3ff;border-radius:8px;font-size:22px;padding:8px}
+
+.hero{background:linear-gradient(135deg,#fff 0,#f2f8ff 55%,#fff);padding:24px 0 0}.hero-inner{display:grid;grid-template-columns:1.25fr .75fr;align-items:end;gap:15px}.tag{display:inline-block;background:#eaf7ee;border:1px solid #c0e3cc;color:#087d3e;font-size:12px;font-weight:800;padding:6px 11px;border-radius:20px}.hero h2{font-size:clamp(42px,6vw,70px);line-height:.98;margin:11px 0 9px;color:#09245d;letter-spacing:-2px}.hero h2 span{color:#078d42}.hero p{font-size:15px;line-height:1.55;color:#5c687c;margin:0 0 13px}.landmark{height:210px;border-radius:18px 18px 0 0;background:linear-gradient(#e6f2ff,#fff);position:relative;overflow:hidden;border:1px solid #cfdaea;border-bottom:0}.flag{position:absolute;right:18px;top:10px;font-size:56px;opacity:.3}.gate{position:absolute;left:17%;bottom:0;width:36%;height:125px;background:linear-gradient(#d9aa72,#a65e2a);border-radius:48% 48% 0 0}.gate:after{content:"";position:absolute;left:37%;bottom:0;width:26%;height:58%;background:#fff0d2;border-radius:50% 50% 0 0}.taj{position:absolute;right:18%;bottom:0;width:25%;height:105px;background:#e6e7e8;clip-path:polygon(50% 0,63% 16%,80% 16%,88% 34%,100% 100%,0 100%,12% 34%,20% 16%,37% 16%)}.search{display:flex;background:#fff;border:1px solid #bfcde0;border-radius:14px;padding:6px;box-shadow:0 8px 22px #183f8c18;position:relative;z-index:2}.search input{flex:1;border:0;outline:0;padding:12px;font-size:15px}.search button{border:0;background:#08255e;color:#fff;border-radius:10px;padding:0 20px;font-weight:800;cursor:pointer}
+
+.section{padding:18px 0}.section-title{display:flex;justify-content:space-between;align-items:end;margin-bottom:10px}.section-title h3{margin:0;color:#09245d;font-size:22px}.section-title span{font-size:11px;color:#68758b}.quick{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.q{background:#fff;border:1px solid #d6dfeb;border-radius:14px;padding:10px 7px;text-align:center;box-shadow:0 5px 15px #183f8c12}.q:hover{transform:translateY(-2px)}.q .ico{height:48px;display:grid;place-items:center;font-size:35px}.q h4{font-size:14px;margin:5px 0 8px}.go{display:inline-block;background:#087f3d;color:#fff;padding:6px 10px;border-radius:8px;font-size:11px;font-weight:800}.q:nth-child(3) .go{background:#5a25c8}.q:nth-child(4) .go{background:#f26917}.q:nth-child(5) .go{background:#123d90}.q:nth-child(6) .go{background:#e32349}
+
+.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.cat{background:#fff;border:1px solid #d5deea;border-radius:14px;padding:14px;min-height:245px;box-shadow:0 5px 15px #183f8c12;border-top:4px solid #123d91}.cat:nth-child(2){border-top-color:#078d42}.cat:nth-child(3){border-top-color:#ef6918}.cat:nth-child(4){border-top-color:#602bc8}.cat:nth-child(5){border-top-color:#0b68b8}.cat:nth-child(6){border-top-color:#e32449}.cat-head{display:flex;align-items:center;gap:9px}.cat-head b{font-size:16px}.cat-head .ci{font-size:24px}.cat ul{margin:9px 0 12px;padding-left:19px;color:#4d586b;font-size:12px;line-height:1.8}.cat li a{color:#4d586b}.cat li a:hover{color:#123d91;text-decoration:underline}.all{display:inline-block;color:#fff;background:#123d91;padding:6px 10px;border-radius:8px;font-size:11px;font-weight:800}.cat:nth-child(2) .all{background:#078d42}.cat:nth-child(3) .all{background:#ef6918}.cat:nth-child(4) .all{background:#602bc8}.cat:nth-child(6) .all{background:#e32449}
+
+.trust{background:#061f5a;color:#fff;margin-top:5px}.trust .wrap{display:grid;grid-template-columns:repeat(5,1fr)}.trust-item{text-align:center;padding:15px 5px;border-right:1px solid #ffffff30}.trust-item:last-child{border:0}.trust-item strong{display:block;font-size:14px}.trust-item small{display:block;color:#d8e3ff;margin-top:3px}.trust-item .ico{font-size:27px;margin-bottom:3px}
+
+.bottom{background:#f5f8fc;padding:18px 0}.bottom-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.box{background:#fff;border:1px solid #d8e1ed;border-radius:13px;padding:15px;box-shadow:0 5px 15px #183f8c10}.box h3{margin:0 0 7px;color:#08255e;font-size:17px}.box p{margin:0;color:#5d687b;font-size:12px;line-height:1.6}.social{display:flex;gap:10px;margin-top:10px}.social a{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#0d2d72;color:#fff;font-weight:bold}.social a:nth-child(2){background:#1596d0}.social a:nth-child(3){background:#13a34a}.social a:nth-child(4){background:#1e65bd}.qr{float:right;width:75px;height:75px;border:5px solid #fff;box-shadow:0 0 0 1px #222;background:repeating-linear-gradient(45deg,#111 0 3px,#fff 3px 6px);display:grid;place-items:center;font-size:10px;font-weight:bold;color:#111}
+
+footer{background:#fff;border-top:1px solid #d6dfeb;padding:14px 0}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot strong{color:#08255e}.foot p{margin:4px 0;color:#6b7485;font-size:11px}.disclaimer{text-align:center;background:#f5f6f8;border-top:1px solid #ddd;padding:8px;color:#707987;font-size:10px}
+
+.empty{display:none;text-align:center;background:#fff;border:1px dashed #aab8cc;border-radius:12px;padding:18px;color:#697589;margin-top:10px}
+@media(max-width:900px){.hero-inner{grid-template-columns:1fr}.landmark{display:none}.quick{grid-template-columns:repeat(3,1fr)}.categories{grid-template-columns:repeat(2,1fr)}.nav{display:none}.menu{display:block}.head{height:68px}.mobile-nav{display:none}.mobile-nav.open{display:flex;position:absolute;top:68px;left:3%;right:3%;background:#fff;flex-direction:column;padding:8px;border:1px solid #d5dfeb;border-radius:12px;box-shadow:0 8px 20px #0002}.trust .wrap{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.top .wrap{justify-content:center}.top .wrap span:first-child{display:none}.brand h1{font-size:19px}.logo{width:43px;height:43px;font-size:21px}.hero h2{font-size:42px}.hero p{font-size:13px}.search input{font-size:12px;padding:10px}.search button{padding:0 13px;font-size:12px}.quick{grid-template-columns:repeat(2,1fr)}.categories{grid-template-columns:1fr}.trust .wrap{grid-template-columns:repeat(2,1fr)}.bottom-grid{grid-template-columns:1fr}.foot{display:block;text-align:center}.qr{float:none;margin:10px auto}.social{justify-content:center}}
 </style>
 </head>
 <body>
-<div class="top"><div class="wrap"><span>🇮🇳 नागरिकों के लिए आसान सरकारी जानकारी</span><span>केवल आधिकारिक सरकारी पोर्टल्स के लिंक</span></div></div>
-
-<header><div class="wrap nav">
-<a class="brand" href="#home"><div class="logo">🇮🇳</div><div><h1>SARKARI <i>SATHI</i> <b>INDIA</b></h1><small>आपका साथी, हर सरकारी काम में</small></div></a>
+<div class="top"><div class="wrap"><span>🇮🇳 नागरिकों के लिए आसान सरकारी जानकारी</span><b>100% Official Government Links</b></div></div>
+<header><div class="wrap head">
+<a class="brand" href="#home"><div class="logo">🇮🇳</div><div><h1>SARKARI <span>SATHI</span> <span>INDIA</span></h1><small>आपका साथी, हर सरकारी काम में</small></div></a>
 <button class="menu" id="menu">☰</button>
-<nav class="navlinks" id="nav"><a href="#home">होम</a><a href="#services">सेवाएँ</a><a href="#categories">श्रेणियाँ</a><a href="https://www.india.gov.in/" target="_blank" rel="noopener">India.gov.in ↗</a></nav>
+<nav class="nav mobile-nav" id="nav"><a href="#home">होम</a><a href="#services">सेवाएँ</a><a href="#categories">श्रेणियाँ</a><a href="https://www.india.gov.in/" target="_blank">India.gov.in ↗</a></nav>
 </div></header>
 
 <main id="home">
-<section class="hero"><div class="wrap hero-grid"><div>
-<span class="badge">Official Government Links</span>
+<section class="hero"><div class="wrap hero-inner"><div>
+<span class="tag">100% Official Government Links</span>
 <h2>हर सरकारी काम<br><span>होगा आसान</span></h2>
-<p>आधार, आयुष्मान, वोटर ID, राशन, PAN, छात्रवृत्ति, प्रमाण पत्र, नौकरी, बिल और दूसरी जरूरी सेवाओं तक एक जगह से पहुँचें।</p>
-<form class="search" id="form"><input id="search" placeholder="यहाँ सर्च करें — आधार कार्ड, राशन कार्ड, आयुष्मान कार्ड..." aria-label="सेवा खोजें"><button>⌕ &nbsp;सर्च करें</button></form>
-</div><div class="scene"><div class="gate"></div><div class="taj"></div></div></div></section>
+<p>यहाँ पाएं सभी जरूरी सेवाओं की जानकारी — आधार, आयुष्मान, वोटर ID, राशन कार्ड, PAN, प्रमाण पत्र, नौकरी, बिल और योजनाएँ।</p>
+<form class="search" id="form"><input id="search" placeholder="यहाँ सर्च करें — आधार कार्ड, राशन कार्ड, आयुष्मान कार्ड..." aria-label="सरकारी सेवा खोजें"><button>⌕ &nbsp;सर्च करें</button></form>
+</div><div class="landmark"><div class="flag">🇮🇳</div><div class="gate"></div><div class="taj"></div></div></div></section>
 
-<section class="section" id="services"><div class="wrap"><div class="title"><h3>सबसे ज्यादा उपयोग होने वाली सेवाएँ</h3><span id="count"></span></div><div class="quick" id="quick"></div><div class="empty" id="empty">कोई सेवा नहीं मिली। दूसरा नाम या कीवर्ड खोजें।</div></div></section>
+<section class="section" id="services"><div class="wrap"><div class="section-title"><h3>सबसे ज्यादा उपयोग होने वाली सेवाएँ</h3><span id="count"></span></div><div class="quick" id="quick"></div><div class="empty" id="empty">कोई सेवा नहीं मिली।</div></div></section>
 
-<section class="section" id="categories"><div class="wrap"><div class="title"><h3>सभी जरूरी सरकारी सेवाएँ</h3><span>क्लिक करके आधिकारिक पोर्टल खोलें</span></div><div class="grid" id="grid"></div></div></section>
+<section class="section" id="categories"><div class="wrap"><div class="section-title"><h3>सभी जरूरी सरकारी सेवाएँ</h3><span>क्लिक करके आधिकारिक पोर्टल खोलें</span></div><div class="categories" id="cats"></div></div></section>
 
 <section class="trust"><div class="wrap">
-<div class="item"><div class="ti">🛡️</div><b>Official Links</b><small>सरकारी पोर्टल्स</small></div>
-<div class="item"><div class="ti">⚡</div><b>Easy & Fast</b><small>सरल प्रक्रिया</small></div>
-<div class="item"><div class="ti">📱</div><b>Mobile Friendly</b><small>मोबाइल पर आसान</small></div>
-<div class="item"><div class="ti">🔒</div><b>Secure</b><small>पासवर्ड/OTP यहाँ न डालें</small></div>
-<div class="item"><div class="ti">ℹ️</div><b>Information</b><small>आधिकारिक स्रोत देखें</small></div>
+<div class="trust-item"><div class="ico">🛡️</div><strong>100% Official Links</strong><small>सरकारी पोर्टल्स</small></div>
+<div class="trust-item"><div class="ico">⚡</div><strong>Easy & Fast</strong><small>सरल प्रक्रिया</small></div>
+<div class="trust-item"><div class="ico">📱</div><strong>Mobile Friendly</strong><small>मोबाइल पर आसान</small></div>
+<div class="trust-item"><div class="ico">🔒</div><strong>Secure & Safe</strong><small>OTP/पासवर्ड यहाँ न डालें</small></div>
+<div class="trust-item"><div class="ico">🎧</div><strong>24x7 Information</strong><small>आधिकारिक जानकारी</small></div>
 </div></section>
 
-<section class="info"><div class="wrap info-grid">
-<div class="info-box"><h3>हमारा उद्देश्य</h3><p>सरकारी सेवाओं को ढूँढना आसान बनाना और नागरिकों को सही सरकारी वेबसाइट तक पहुँचाना।</p></div>
-<div class="info-box warning"><h3>⚠️ जरूरी सावधानी</h3><p>यह सरकारी वेबसाइट नहीं है। किसी भी आवेदन, OTP या भुगतान से पहले वेबसाइट का सरकारी डोमेन स्वयं जाँचें।</p></div>
+<section class="bottom"><div class="wrap bottom-grid">
+<div class="box"><h3>हमारा वादा</h3><p>✓ सही जानकारी<br>✓ सही लिंक<br>✓ आसान सरकारी सेवाओं तक पहुँच</p></div>
+<div class="box"><h3>हमसे जुड़ें <span class="qr">QR</span></h3><p>नई सेवाओं और जरूरी सरकारी जानकारी के लिए वेबसाइट को bookmark करें।</p><div class="social"><a href="#" onclick="return false">▶</a><a href="#" onclick="return false">✈</a><a href="#" onclick="return false">☘</a><a href="#" onclick="return false">f</a></div></div>
 </div></section>
 </main>
 
-<footer><div class="wrap foot">
-<div><h3>SARKARI SATHI INDIA</h3><p>एक स्वतंत्र सूचना पोर्टल। यहाँ दिए गए service buttons उपयोगकर्ता को संबंधित सरकारी वेबसाइटों तक ले जाते हैं।</p></div>
-<div><h3>जरूरी लिंक</h3><p><a href="https://www.india.gov.in/" target="_blank" rel="noopener">India.gov.in ↗</a><br><br><a href="https://www.india.gov.in/services" target="_blank" rel="noopener">Government Services ↗</a><br><br><a href="https://www.india.gov.in/directory/web-directory" target="_blank" rel="noopener">Government Web Directory ↗</a></p></div>
-<div><h3>संपर्क</h3><p>वेबसाइट संबंधी सुझाव के लिए अपने GitHub repository में issue खोलें।</p></div>
-</div><div class="wrap copy">© 2026 Sarkari Sathi India | Independent Information Portal</div></footer>
-<div class="toast" id="toast"></div>
+<footer><div class="wrap foot"><div><strong>SARKARI <span style="color:#078d42">SATHI</span> <span style="color:#ef6415">INDIA</span></strong><p>सिर्फ आधिकारिक सरकारी जानकारी के लिए उपयोग करें।</p></div><div><strong>केवल आधिकारिक सरकारी वेबसाइट लिंक</strong><p>यह सरकारी संस्था की वेबसाइट नहीं है।</p></div></div></footer>
+<div class="disclaimer">Disclaimer: यह वेबसाइट केवल जानकारी के उद्देश्य से बनाई गई है। इसका किसी भी सरकारी संस्था से कोई संबंध नहीं है। किसी भी आवेदन/भुगतान से पहले official government domain जाँचें।</div>
 
 <script>
-const quick=[
+const services=[
 ["आधार कार्ड","🪪","https://uidai.gov.in/","aadhaar आधार uidai"],
-["आयुष्मान कार्ड","🏥","https://beneficiary.nha.gov.in/","ayushman आयुष्मान pmjay health"],
-["वोटर ID","🗳️","https://voters.eci.gov.in/","voter वोटर election eci"],
-["राशन कार्ड","🍚","https://nfsa.gov.in/","ration राशन nfsa food"],
-["PAN कार्ड","💳","https://www.incometax.gov.in/","pan पैन income tax आयकर"],
+["आयुष्मान कार्ड","🏥","https://beneficiary.nha.gov.in/","ayushman आयुष्मान pmjay"],
+["वोटर ID","🗳️","https://voters.eci.gov.in/","voter वोटर eci"],
+["राशन कार्ड","🍚","https://nfsa.gov.in/","ration राशन nfsa"],
+["PAN कार्ड","💳","https://www.incometax.gov.in/","pan पैन income tax"],
 ["छात्रवृत्ति","🎓","https://scholarships.gov.in/","scholarship छात्रवृत्ति"]];
 
-const cats=[
-["ID CARDS","🪪",[
-["आधार कार्ड","https://uidai.gov.in/","aadhaar आधार"],["पैन कार्ड","https://www.incometax.gov.in/","pan पैन"],["वोटर ID","https://voters.eci.gov.in/","voter वोटर"],["ड्राइविंग लाइसेंस","https://parivahan.gov.in/","driving licence लाइसेंस"],["पासपोर्ट","https://www.passportindia.gov.in/","passport पासपोर्ट"],["e-Shram Card","https://eshram.gov.in/","eshram श्रम"],["DigiLocker","https://www.digilocker.gov.in/","digilocker दस्तावेज"]]],
-["CERTIFICATES","📜",[
-["जाति प्रमाण पत्र","https://www.india.gov.in/services/state","जाति caste"],["आय प्रमाण पत्र","https://www.india.gov.in/services/state","आय income"],["निवास प्रमाण पत्र","https://www.india.gov.in/services/state","निवास domicile"],["जन्म प्रमाण पत्र","https://www.india.gov.in/services/state","जन्म birth"],["मृत्यु प्रमाण पत्र","https://www.india.gov.in/services/state","मृत्यु death"],["दिव्यांग प्रमाण पत्र","https://www.india.gov.in/services/state","दिव्यांग disability"]]],
-["SARKARI YOJANA","👥",[
-["प्रधानमंत्री योजनाएँ","https://www.india.gov.in/my-government/schemes","pm योजना"],["राज्य योजनाएँ","https://www.india.gov.in/services/state","state राज्य"],["केंद्र सरकार योजनाएँ","https://www.india.gov.in/my-government/schemes","central केंद्र"],["आवास योजना","https://pmaymis.gov.in/","pmay आवास"],["महिला योजनाएँ","https://www.india.gov.in/my-government/schemes","women महिला"],["पेंशन योजनाएँ","https://www.india.gov.in/my-government/schemes","pension पेंशन"],["किसान योजनाएँ","https://www.india.gov.in/my-government/schemes","farmer किसान"]]],
-["BILL PAYMENTS","🧾",[
-["बिजली बिल","https://www.india.gov.in/services/state","electricity बिजली"],["पानी बिल","https://www.india.gov.in/services/state","water पानी"],["गैस बुकिंग","https://www.mylpg.in/","gas गैस lpg"],["मोबाइल रिचार्ज","https://www.bharatbillpay.com/","mobile recharge"],["DTH रिचार्ज","https://www.bharatbillpay.com/","dth"],["रेलवे टिकट","https://www.irctc.co.in/","railway train irctc"],["इंश्योरेंस प्रीमियम","https://www.india.gov.in/services","insurance बीमा"]]],
-["JOBS & EDUCATION","💼",[
-["सरकारी नौकरी","https://www.ncs.gov.in/","job नौकरी ncs"],["रोजगार समाचार","https://www.employmentnews.gov.in/","employment रोजगार"],["स्कॉलरशिप","https://scholarships.gov.in/","scholarship छात्रवृत्ति"],["एडमिट कार्ड","https://www.india.gov.in/services","admit card परीक्षा"],["ऑनलाइन कोर्स","https://swayam.gov.in/","course swayam"],["DigiLocker documents","https://www.digilocker.gov.in/","digilocker दस्तावेज"]]],
-["OTHER SERVICES","🎧",[
-["शिकायत दर्ज करें","https://pgportal.gov.in/","complaint शिकायत"],["पुलिस सत्यापन","https://digitalpolice.gov.in/","police verification"],["वाहन संबंधित सेवाएँ","https://parivahan.gov.in/","vehicle वाहन"],["कानूनी सेवाएँ","https://nalsa.gov.in/","legal कानून"],["टिकट बुकिंग","https://www.irctc.co.in/","ticket टिकट"],["और अन्य सेवाएँ","https://www.india.gov.in/services","other अन्य"]]]
+const categories=[
+["ID CARDS","🪪",[["आधार कार्ड","https://uidai.gov.in/","aadhaar"],["पैन कार्ड","https://www.incometax.gov.in/","pan"],["वोटर ID","https://voters.eci.gov.in/","voter"],["ड्राइविंग लाइसेंस","https://parivahan.gov.in/","driving licence"],["पासपोर्ट","https://www.passportindia.gov.in/","passport"],["e-Shram Card","https://eshram.gov.in/","eshram"],["DigiLocker","https://www.digilocker.gov.in/","digilocker"]]],
+["CERTIFICATES","📜",[["UP जाति प्रमाण पत्र","https://edistrict.up.gov.in/edistrictup/","up जाति caste"],["UP निवास प्रमाण पत्र","https://edistrict.up.gov.in/edistrictup/","up निवास domicile"],["आय प्रमाण पत्र","https://edistrict.up.gov.in/edistrictup/","income"],["जन्म प्रमाण पत्र","https://www.india.gov.in/services/state","birth"],["मृत्यु प्रमाण पत्र","https://www.india.gov.in/services/state","death"],["दिव्यांग प्रमाण पत्र","https://www.india.gov.in/services/state","disability"]]],
+["SARKARI YOJANA","👥",[["प्रधानमंत्री योजनाएँ","https://www.india.gov.in/my-government/schemes","pm योजना"],["राज्य योजनाएँ","https://www.india.gov.in/services/state","state"],["केंद्र सरकार योजनाएँ","https://www.india.gov.in/my-government/schemes","central"],["आवास योजना","https://pmaymis.gov.in/","pmay आवास"],["महिला योजनाएँ","https://www.india.gov.in/my-government/schemes","women"],["पेंशन योजनाएँ","https://www.india.gov.in/my-government/schemes","pension"],["किसान योजनाएँ","https://www.india.gov.in/my-government/schemes","farmer"]]],
+["BILL PAYMENTS","🧾",[["बिजली बिल","https://www.india.gov.in/services/state","electricity"],["पानी बिल","https://www.india.gov.in/services/state","water"],["गैस बुकिंग","https://www.mylpg.in/","gas lpg"],["मोबाइल रिचार्ज","https://www.bharatbillpay.com/","mobile"],["DTH रिचार्ज","https://www.bharatbillpay.com/","dth"],["रेलवे टिकट","https://www.irctc.co.in/","railway irctc"],["इंश्योरेंस प्रीमियम","https://www.india.gov.in/services","insurance"]]],
+["JOBS & EDUCATION","💼",[["सरकारी नौकरी","https://www.ncs.gov.in/","job नौकरी"],["रोजगार समाचार","https://www.employmentnews.gov.in/","employment"],["स्कॉलरशिप","https://scholarships.gov.in/","scholarship"],["एडमिट कार्ड","https://www.india.gov.in/services","admit exam"],["ऑनलाइन कोर्स","https://swayam.gov.in/","course"],["DigiLocker documents","https://www.digilocker.gov.in/","digilocker"]]],
+["OTHER SERVICES","🎧",[["शिकायत दर्ज करें","https://pgportal.gov.in/","complaint शिकायत"],["पुलिस सत्यापन","https://digitalpolice.gov.in/","police"],["वाहन संबंधित सेवाएँ","https://parivahan.gov.in/","vehicle"],["कानूनी सेवाएँ","https://nalsa.gov.in/","legal कानून"],["टिकट बुकिंग","https://www.irctc.co.in/","ticket"],["और अन्य सेवाएँ","https://www.india.gov.in/services","other"]]]
 ];
 
-const $=id=>document.getElementById(id), quickEl=$("quick"), grid=$("grid"), search=$("search"), empty=$("empty"), count=$("count");
-function safe(s){return s.replace(/[<>&"]/g,m=>({"<":"&lt;",">":"&gt;","&":"&amp;",'"':"&quot;"}[m]))}
-function renderQuick(q){
- quickEl.innerHTML=q.map(x=>`<article class="q"><div class="ico">${x[1]}</div><h4>${x[0]}</h4><a class="go" target="_blank" rel="noopener" href="${x[2]}">यहाँ जाएँ ↗</a></article>`).join("");
- count.textContent=q.length?`${q.length} प्रमुख सेवाएँ`:"";
-}
-function renderCats(term=""){
- let t=0, found=0;
- grid.innerHTML=cats.map(c=>{
-  const arr=c[2].filter(x=>(x[0]+" "+x[2]+" "+c[0]).toLowerCase().includes(term));
-  t+=arr.length;
-  if(term && !arr.length)return "";
-  found++;
-  return `<article class="card"><div class="ct"><div class="ci">${c[1]}</div><h4>${c[0]}</h4></div><ul>${arr.map(x=>`<li><a target="_blank" rel="noopener" href="${x[1]}">${safe(x[0])} ↗</a></li>`).join("")}</ul><a class="all" target="_blank" rel="noopener" href="https://www.india.gov.in/services">सभी देखें ↗</a></article>`;
- }).join("");
- return t;
-}
-function searchNow(){
- const term=search.value.trim().toLowerCase();
- const q=quick.filter(x=>(x[0]+" "+x[3]).toLowerCase().includes(term));
- const n=renderCats(term);
- renderQuick(q);
- empty.style.display=(term && !q.length && !n)?"block":"none";
- document.querySelector("#services").scrollIntoView({behavior:"smooth",block:"start"});
-}
-$("form").addEventListener("submit",e=>{e.preventDefault();searchNow()});
-search.addEventListener("input",()=>{if(!search.value.trim()){renderQuick(quick);renderCats("")}});
+const $=x=>document.getElementById(x), quick=$("quick"), cats=$("cats"), search=$("search"), empty=$("empty");
+function renderQuick(term=""){const q=services.filter(s=>(s[0]+" "+s[3]).toLowerCase().includes(term));quick.innerHTML=q.map(s=>`<div class="q"><div class="ico">${s[1]}</div><h4>${s[0]}</h4><a class="go" href="${s[2]}" target="_blank" rel="noopener">यहाँ जाएँ →</a></div>`).join("");$("count").textContent=q.length+" प्रमुख सेवाएँ";return q.length}
+function renderCats(term=""){let n=0;cats.innerHTML=categories.map(c=>{const arr=c[2].filter(x=>(x[0]+" "+x[2]+" "+c[0]).toLowerCase().includes(term));n+=arr.length;if(term&&!arr.length)return "";return `<div class="cat"><div class="cat-head"><div class="ci">${c[1]}</div><b>${c[0]}</b></div><ul>${arr.map(x=>`<li><a href="${x[1]}" target="_blank" rel="noopener">${x[0]} ↗</a></li>`).join("")}</ul><a class="all" href="https://www.india.gov.in/services" target="_blank" rel="noopener">सभी देखें →</a></div>`}).join("");return n}
+$("form").addEventListener("submit",e=>{e.preventDefault();const t=search.value.trim().toLowerCase();const q=renderQuick(t),n=renderCats(t);empty.style.display=t&&!q&&!n?"block":"none";$("services").scrollIntoView({behavior:"smooth"})});
+search.addEventListener("input",()=>{if(!search.value.trim()){renderQuick();renderCats();empty.style.display="none"}});
 $("menu").addEventListener("click",()=>$("nav").classList.toggle("open"));
-document.querySelectorAll(".navlinks a").forEach(a=>a.addEventListener("click",()=>$("nav").classList.remove("open")));
-renderQuick(quick);renderCats("");
+renderQuick();renderCats();
 </script>
 </body>
 </html>
